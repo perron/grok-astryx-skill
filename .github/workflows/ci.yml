@@ -27,7 +27,7 @@ jobs:
           python -m pip install ".[dev]"
       - name: CLI smoke
         run: |
-          grok-astryx-skill
+          grok-astryx-skill --help
           grok-astryx-skill --version
       - name: Tests
         run: python -m pytest -q
